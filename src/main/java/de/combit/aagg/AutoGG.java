@@ -14,6 +14,7 @@ _| |_| (__ | (_) || | | | | || |_) || || |_
 
  */
 
+import de.combit.aagg.event.MessageEvent;
 import net.labymod.api.LabyModAddon;
 import net.labymod.settings.elements.BooleanElement;
 import net.labymod.settings.elements.ControlElement;
@@ -22,18 +23,23 @@ import net.labymod.settings.elements.StringElement;
 import net.labymod.utils.Consumer;
 import net.labymod.utils.Material;
 
+
 import java.util.List;
 
 public class AutoGG extends LabyModAddon {
 
     public static AutoGG instance;
-    private boolean enabled = true;
+    public boolean enabled = true;
     public String ggMessage = "GG";
+
 
     @Override
     public void onEnable() {
         instance = this;
 
+
+        getApi().getEventService().registerListener(new MessageEvent());
+        System.out.println("[AdvancedAutoGG] Has started");
     }
 
     @Override

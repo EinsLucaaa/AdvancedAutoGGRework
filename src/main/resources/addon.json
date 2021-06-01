@@ -2,7 +2,7 @@
   "uuid": "%uuid%",
   "name": "AdvancedAutoGG",
   "mainClass": "de.combit.aagg.AutoGG",
-  "description": "This addon ensures that you automatically write GG into the chat after a round on Cytooxien.de!",
+  "description": "This addon ensures that you automatically write GG into the chat after a round on GommeHD.net!",
   "version": 1,
   "author": "1combit",
   "category": 1,
