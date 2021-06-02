@@ -32,7 +32,11 @@ public class MessageEvent {
             new Timer("SendMessage").schedule(new TimerTask() {
                 @Override
                 public void run() {
+                if (AutoGG.instance.ggMessage != null) {
                     Minecraft.getInstance().player.sendChatMessage(AutoGG.instance.getConfig().get("Message").getAsString());
+                } else {
+                    Minecraft.getInstance().player.sendChatMessage("GG");
+                }
                 }
             }, 1000L);
         }
