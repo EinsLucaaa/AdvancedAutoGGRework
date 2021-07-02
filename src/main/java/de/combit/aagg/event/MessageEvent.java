@@ -28,7 +28,7 @@ public class MessageEvent {
     @Subscribe
     public void onMessageReceive(MessageReceiveEvent event) {
         String message = event.getComponent().getString();
-        if (AutoGG.instance.enabled && message.contains("-= Statistiken dieser Runde =-") || message.contains("-= Statistics of this game =-")) {
+        if (AutoGG.instance.enabled && message.contains("§7-= §eStatistiken dieser Runde §7=-") || message.contains("§7-= §eStatistics of this game §7=-") || message.contains("§7hat die PartyGames gewonnen!")) {
             new Timer("SendMessage").schedule(new TimerTask() {
                 @Override
                 public void run() {
