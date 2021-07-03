@@ -29,7 +29,7 @@ public class MessageEvent {
     @Subscribe
     public void onMessageReceive(MessageReceiveEvent event) {
         String message = event.getComponent().getString();
-        if (AutoGG.instance.enabled && !message.contains(":") && message.contains("-= §eStatistiken dieser Runde =-") || message.contains("-= Statistics of this game =-") || message.contains("hat die PartyGames gewonnen!")) {
+        if (AutoGG.instance.enabled && !message.contains(":") && message.contains("-= Statistiken dieser Runde =-") || message.contains("-= Statistics of this game =-") || message.contains("hat die PartyGames gewonnen!")) {
             new Timer("SendMessage").schedule(new TimerTask() {
                 @Override
                 public void run() {
