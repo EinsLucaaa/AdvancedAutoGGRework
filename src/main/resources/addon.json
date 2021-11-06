@@ -1,10 +1,10 @@
 {
   "uuid": "%uuid%",
   "name": "AdvancedAutoGG",
-  "mainClass": "de.combit.aagg.AutoGG",
+  "mainClass": "me.einsluca.aagg.AutoGG",
   "description": "This addon ensures that you automatically write GG into the chat after a round on GommeHD.net!",
   "version": 1,
-  "author": "1combit",
+  "author": "EinsLucaaa",
   "category": 1,
   "icon": "https://i.imgur.com/z1GXjR4.png"
 }

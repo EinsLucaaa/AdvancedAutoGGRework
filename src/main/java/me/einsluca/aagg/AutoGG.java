@@ -1,20 +1,6 @@
-package de.combit.aagg;/*
+package me.einsluca.aagg;
 
- __                           _      _  _   
-/  |                         | |    (_)| |  
-`| |   ___   ___   _ __ ___  | |__   _ | |_ 
- | |  / __| / _ \ | '_ ` _ \ | '_ \ | || __|
-_| |_| (__ | (_) || | | | | || |_) || || |_ 
-\___/ \___| \___/ |_| |_| |_||_.__/ |_| \__|
-
-» Class created by 1combit | Luca
-» Date: 01.06.2021 | 15:05
-» 1combit#8044
-
-
- */
-
-import de.combit.aagg.event.MessageEvent;
+import me.einsluca.aagg.event.MessageEvent;
 import net.labymod.api.LabyModAddon;
 import net.labymod.settings.elements.BooleanElement;
 import net.labymod.settings.elements.ControlElement;
